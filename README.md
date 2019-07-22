@@ -9,13 +9,18 @@
 </p>
 
 ---
-## The Goal 😁
+## Project Background😁
+The background of this project is based on our past experience where we were faced with lots of life problem that forced us to question about what happiness is and what determine someone to be happy
 
+## The Goal 😁
 The goal of this project is to create a machine learning app capable of predicting individual happiness index based on real life datasets consists of various aspects of life
 
 <p align="center">
     <img src="Documentation/shot10.png"><img src="Documentation/shot2.png">
 </p>
+
+## Data😁
+The data for the project is taken from the questionnaire that we prepare by ourselves and share it through social media (Whatsapp)
 
 ## Features 😁
 * Predicting happiness index

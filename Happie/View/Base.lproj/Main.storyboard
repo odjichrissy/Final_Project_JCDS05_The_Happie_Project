@@ -221,8 +221,17 @@
                                                     <constraint firstItem="RPa-xV-nfv" firstAttribute="top" secondItem="Uko-Tk-gaA" secondAttribute="bottom" constant="15" id="yhR-nJ-iD8"/>
                                                 </constraints>
                                             </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Happiness quotes" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vBx-6d-7hx">
+                                                <rect key="frame" x="84" y="75" width="246" height="127"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="127" id="S2g-bd-ZBA"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.61835739209999996" green="0.24743076210000001" blue="0.17092767750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taW-Iz-C6b">
-                                                <rect key="frame" x="63.5" y="762" width="286" height="30"/>
+                                                <rect key="frame" x="64" y="767" width="286" height="30"/>
                                                 <color key="backgroundColor" red="0.22745098039215686" green="0.23529411764705882" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="l4h-08-h27"/>
@@ -237,15 +246,6 @@
                                                     <segue destination="1pO-yt-K6z" kind="show" identifier="goToPageResult" id="hJq-A3-lPl"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Happiness quotes" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vBx-6d-7hx">
-                                                <rect key="frame" x="84" y="75" width="246" height="127"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="127" id="S2g-bd-ZBA"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.61835739209999996" green="0.24743076210000001" blue="0.17092767750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.77647058823529413" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -261,7 +261,7 @@
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="trailing" secondItem="Sd0-4g-4db" secondAttribute="trailing" constant="23" id="U1l-J9-9jz"/>
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="leading" secondItem="nef-kJ-xQ3" secondAttribute="leading" constant="-23" id="Yjq-pb-rqT"/>
                                             <constraint firstItem="RlM-Jv-8lx" firstAttribute="centerX" secondItem="taW-Iz-C6b" secondAttribute="centerX" constant="0.5" id="ZW2-cd-Zu4"/>
-                                            <constraint firstItem="taW-Iz-C6b" firstAttribute="top" secondItem="RlM-Jv-8lx" secondAttribute="bottom" constant="27" id="aHg-lK-WmO"/>
+                                            <constraint firstItem="taW-Iz-C6b" firstAttribute="top" secondItem="RlM-Jv-8lx" secondAttribute="bottom" constant="32" id="aHg-lK-WmO"/>
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="trailing" secondItem="nef-kJ-xQ3" secondAttribute="trailing" constant="23" id="aIW-ow-UuH"/>
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="trailing" secondItem="RPa-xV-nfv" secondAttribute="trailing" constant="23" id="bUo-om-92f"/>
                                             <constraint firstAttribute="height" constant="896" id="bg5-St-2Fy"/>
@@ -276,7 +276,7 @@
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="leading" secondItem="Uko-Tk-gaA" secondAttribute="leading" constant="-23" id="mm2-Gv-IOa"/>
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="top" secondItem="RbB-AD-H6g" secondAttribute="top" constant="75" id="qBz-vR-6HR"/>
                                             <constraint firstItem="vBx-6d-7hx" firstAttribute="leading" secondItem="eSH-Cq-4iG" secondAttribute="leading" constant="-23" id="rJX-Zd-d6g"/>
-                                            <constraint firstAttribute="bottom" secondItem="taW-Iz-C6b" secondAttribute="bottom" constant="104" id="vwA-Wu-EKp"/>
+                                            <constraint firstAttribute="bottom" secondItem="taW-Iz-C6b" secondAttribute="bottom" constant="99" id="vwA-Wu-EKp"/>
                                         </constraints>
                                     </view>
                                 </subviews>

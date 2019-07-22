@@ -189,7 +189,7 @@ class pageResult: UIViewController, UITextFieldDelegate {
         barChartView.xAxis.labelPosition = .bottom
         barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:age)
         barChartView.data = chartData
-        barChartView.animate(xAxisDuration: 5.5, yAxisDuration: 5.0, easingOption: .easeInBounce)
+        barChartView.animate(xAxisDuration: 10.5, yAxisDuration: 10.0, easingOption: .easeInBounce)
     }
 
     
@@ -217,8 +217,8 @@ class pageResult: UIViewController, UITextFieldDelegate {
                 prediction2a = predictions2.Happiness
                 
                 if prediction2a >= 7{
-//                    jumlahAtas += 1
-//                    totalData += 1
+                    jumlahAtas += 1
+                    totalData += 1
                     persentaseAtas = round(10*(jumlahAtas/totalData*100))/10
                     persentaseBawah = round(10*(jumlahBawah/totalData*100))/10
                     happinessValue.append(persentaseAtas)
