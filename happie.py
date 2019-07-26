@@ -246,7 +246,7 @@ Seaborn Plot
 # sns.distplot(data['Soc. Exist'])
 # sns.distplot(data['Social'])
 
-plt.show()
+# plt.show()
 
 '''
 ================================================================================================================================
@@ -259,6 +259,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import KMeans
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
 
 model = LinearRegression()
 model.fit(X_train, y_train)
@@ -277,6 +278,9 @@ modelTree.fit(X_train, y_train)
 
 modelRf = RandomForestClassifier(n_estimators=100)
 modelRf.fit(X_train, y_train)
+
+modelRR = RandomForestRegressor(n_estimators=100)
+modelRR.fit(X_train, y_train)
 
 
 # data['yBest'] = model.predict(
@@ -326,6 +330,10 @@ Trial with the best possible outcome
 # print("Happiness Random Forest: ", round(predictionRf[0],1))
 # print("Prediction Score:{}%".format(round(modelRf.score(X_train,y_train)*100,2)))
 
+# predictionRR = modelRR.predict([[28,5,5,5,5,5,5]])
+# print("Happiness Random Forest: ", round(predictionRR[0],1))
+# print("Prediction Score:{}%".format(round(modelRR.score(X_train,y_train)*100,2)))
+
 '''
 ================================================================================================================================
 Trial
@@ -362,10 +370,10 @@ Trial
 Convert to CoreMl
 ================================================================================================================================
 '''
-# from coremltools.converters import sklearn
+from coremltools.converters import sklearn
 
-# coreml_model = coremltools.converters.sklearn.convert(modelLog, ['Age','Job','Economic','Living','Health','Mental','Social'], 'Happiness')
-# coreml_model.save('logistic_model.mlmodel')
-# coreml_model2 = coremltools.converters.sklearn.convert(modelRf, ['Age','Job','Economic','Living','Health','Mental','Social'], 'Happiness')
-# coreml_model2.save('random_forest.mlmodel')
-# print('Core ML Model saved')
+coreml_model = coremltools.converters.sklearn.convert(modelLog, ['Age','Job','Economic','Living','Health','Mental','Social'], 'Happiness')
+coreml_model.save('logistic_model.mlmodel')
+coreml_model2 = coremltools.converters.sklearn.convert(modelRR, ['Age','Job','Economic','Living','Health','Mental','Social'], 'Happiness')
+coreml_model2.save('random_forest_regressor.mlmodel')
+print('Core ML Model saved')

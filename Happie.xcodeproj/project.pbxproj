@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		125CFA9C6CB6EC51EB649A97 /* Pods_Happie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A4260299B782F22F9CA7 /* Pods_Happie.framework */; };
+		B8048A6822EA8F0500F4A0D1 /* random_forest_regressor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8048A6722EA8F0500F4A0D1 /* random_forest_regressor.mlmodel */; };
 		B8066EBE22D321FF0049F71F /* page01.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8066EBD22D321FF0049F71F /* page01.swift */; };
 		B80F353022E2A8A5006E7A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80F352E22E2A8A4006E7A41 /* Main.storyboard */; };
 		B816640122E04F4C00F60278 /* logistic_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B816640022E04F4C00F60278 /* logistic_model.mlmodel */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		79134EEEB3D73BC7DDA72C3E /* Pods-Happie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happie.release.xcconfig"; path = "Target Support Files/Pods-Happie/Pods-Happie.release.xcconfig"; sourceTree = "<group>"; };
+		B8048A6722EA8F0500F4A0D1 /* random_forest_regressor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = random_forest_regressor.mlmodel; sourceTree = SOURCE_ROOT; };
 		B8066EBD22D321FF0049F71F /* page01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page01.swift; sourceTree = "<group>"; };
 		B80F352F22E2A8A5006E7A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B816640022E04F4C00F60278 /* logistic_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = logistic_model.mlmodel; path = ../../../trial05/logistic_model.mlmodel; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B8318B1122D318BF00C23631 /* QuoteBanks.swift */,
 				B816640022E04F4C00F60278 /* logistic_model.mlmodel */,
 				B87AD1DA22E1A6F2006F7148 /* random_forest.mlmodel */,
+				B8048A6722EA8F0500F4A0D1 /* random_forest_regressor.mlmodel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				B8318B1222D318BF00C23631 /* QuoteBanks.swift in Sources */,
 				B8066EBE22D321FF0049F71F /* page01.swift in Sources */,
 				B8318AFF22D317B800C23631 /* ViewController.swift in Sources */,
+				B8048A6822EA8F0500F4A0D1 /* random_forest_regressor.mlmodel in Sources */,
 				B816640122E04F4C00F60278 /* logistic_model.mlmodel in Sources */,
 				B8318AFD22D317B800C23631 /* AppDelegate.swift in Sources */,
 			);

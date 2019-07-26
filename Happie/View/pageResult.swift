@@ -40,6 +40,7 @@ class pageResult: UIViewController, UITextFieldDelegate {
     // Machine learning model
     let model = logistic_model()
     let model2 = random_forest()
+    let model3 = random_forest_regressor()
     
     // data for graph
     var totalData : Double = 129
@@ -62,7 +63,7 @@ class pageResult: UIViewController, UITextFieldDelegate {
     var persentaseBawah : Double = 0
     
     var prediction1a : Int64 = 0
-    var prediction2a : Int64 = 0
+    var prediction2a : Double = 0
     
     // Data for side scroller
     let WIDTH : CGFloat = 409
@@ -208,17 +209,20 @@ class pageResult: UIViewController, UITextFieldDelegate {
     @IBAction func switchML(_ sender: UISwitch) {
         if (switchView.isOn==false) {
             mLType.text = "Random \nForest"
-            if let predictions2 = try? model2.prediction(Age: agePassed!, Job: jobPassed!, Economic: economicPassed!, Living: livingPassed!, Health: healthPassed!, Mental: mentalPassed!, Social: socialPassed!){
+            if let predictions2 = try? model3.prediction(Age: agePassed!, Job: jobPassed!, Economic: economicPassed!, Living: livingPassed!, Health: healthPassed!, Mental: mentalPassed!, Social: socialPassed!){
                 
-                let indexFormatter = NumberFormatter()
-                indexFormatter.numberStyle = .decimal
-                indexFormatter.maximumFractionDigits = 0
-                self.scoreLabel.text = "Happines Index: " + indexFormatter.string(for: predictions2.Happiness)!
+//                let indexFormatter = NumberFormatter()
+//                indexFormatter.numberStyle = .decimal
+//                indexFormatter.maximumFractionDigits = 0
+//                self.scoreLabel.text = "Happines Index: " + indexFormatter.string(for: predictions2.Happiness)!
+                
+                let hasil = round(predictions2.Happiness*1000)/1000
+                self.scoreLabel.text = "Happines Index: \(hasil)"
                 prediction2a = predictions2.Happiness
                 
                 if prediction2a >= 7{
-                    jumlahAtas += 1
-                    totalData += 1
+//                    jumlahAtas += 1
+//                    totalData += 1
                     persentaseAtas = round(10*(jumlahAtas/totalData*100))/10
                     persentaseBawah = round(10*(jumlahBawah/totalData*100))/10
                     happinessValue.append(persentaseAtas)
