@@ -26,7 +26,7 @@ The data for the project is taken from the questionnaire that we prepare by ours
 * Predicting happiness index
 * Available in 2 prediction mode:
     1. Logistic Regression (Default)
-    2. Random Forest Classifier
+    2. Random Forest Regressor
 * Get daily tips to increase your happiness level
 * Available in all iPhone
 
